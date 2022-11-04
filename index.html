@@ -9,30 +9,37 @@
 <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
 <link href="style.css" rel="stylesheet">
 <script src="https://use.fontawesome.com/4831b09dbe.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
 </head>
 <body>
-<header id="header">
-<nav class="navbar navbar-expand-lg">
+<div id="header">
+<nav id="navi" class="navbar navbar-expand-lg fixed-top navbar-dark">
   <div class="container">
     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-      <span class="navbar-toggler-icon"></span>
+      <span class="navbar-toggler-icon "></span>
     </button>
     <div class="collapse navbar-collapse" id="navbarSupportedContent">
       <ul class="navbar-nav me-auto mb-2 mb-lg-0">
         <li class="nav-item">
-          <a class="nav-link" aria-current="page" href="#">Home</a>
+          <a class="nav-link" style="padding:0" aria-current="page" href="#">Početak</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="#omeni">O meni</a>
+          <a class="nav-link" style="padding:0" href="#omeni">O meni</a>
         </li>
 		<li class="nav-item">
-          <a class="nav-link" href="#zivotopis">Životopis</a>
+          <a class="nav-link" style="padding:0" href="#zivotopis">Životopis</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" style="padding:0" href="#portfolio">Portfolio</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" style="padding:0" href="#footer">Kontakt</a>
         </li>
       </ul>
     </div>
   </div>
 </nav>
-</header>
+</div>
 
 <section id="hero">
 	<div class="hero-container">
@@ -67,7 +74,7 @@
                 </div>
                 <div class="row">
                     <div class="col-lg-12">
-                        <p class="opis">Stručni prvostupnik poslovne informatike. Titulu sam stekao obranom završnog rada na Fakultetu organizcije i informatike. Napisao sam i obranio rad pod nazivom "Oblikovanje web sučelja".</p>
+                        <p class="opis">Stručni prvostupnik poslovne informatike. Titulu sam stekao obranom završnog rada na Fakultetu organizacije i informatike. Napisao sam i obranio rad pod nazivom "Oblikovanje web sučelja".</p>
                     </div>
                </div>
                 <div class="row skills">
@@ -75,31 +82,31 @@
                         <div class="progress-bar-container">
                             <h2>HTML<span class="value">80%</span></h2>
                             <div class="progress-bar">
-                                <span class="percentage html"></span>
+                                <span id="html" class="percentage"></span>
                             </div>
                         </div>
                         <div class="progress-bar-container">
                             <h2>CSS<span class="value">60%</span></h2>
                             <div class="progress-bar">
-                                <span class="percentage css"></span>
+                                <span id="css"class="percentage"></span>
                             </div>
                         </div>
                         <div class="progress-bar-container">
                             <h2>PHP<span class="value">20%</span></h2>
                             <div class="progress-bar">
-                                <span class="percentage php"></span>
+                                <span id="php" class="percentage"></span>
                             </div>
                         </div>
                         <div class="progress-bar-container">
                             <h2>PHOTOSHOP<span class="value">40%</span></h2>
                             <div class="progress-bar">
-                                <span class="percentage photoshop"></span>
+                                <span id="photoshop" class="percentage"></span>
                             </div>
                         </div>
                         <div class="progress-bar-container">
                             <h2>MICROSOFT OFFICE<span class="value">60%</span></h2>
                             <div class="progress-bar">
-                                <span class="percentage office"></span>
+                                <span id="office" class="percentage"></span>
                             </div>
                         </div>   
                     </div>
@@ -108,17 +115,194 @@
 		</div>
         <div class="social-media">
                     <div>Povežite se sa mnom:</div>
-                    <a href><i class="fa fa-facebook-square" aria-hidden="true"></i></a>
-                    <a href><i class="fa fa-instagram" aria-hidden="true"></i></a>
-                    <a href="https://www.linkedin.com/in/matija-leljak/"><i class="fa fa-linkedin-square" aria-hidden="true"></i></a>
+                    <a target="_blank" href="https://www.facebook.com/matija.leljakk/"><i class="fa fa-facebook-square" aria-hidden="true"></i></a>
+                    <a target="_blank" href="https://www.instagram.com/matija.leljak/"><i class="fa fa-instagram" aria-hidden="true"></i></a>
+                    <a target="_blank" href="https://www.linkedin.com/in/matija-leljak/"><i class="fa fa-linkedin-square" aria-hidden="true"></i></a>
+                    <a target="_blank" href="https://www.youtube.com/channel/UCgPK9vPX5NbfaQRIU_h1HCQ"><i class="fa fa-youtube-play" aria-hidden="true"></i></a>
         </div>
 	</section>
     <section id="zivotopis">
         <div class="section-title">
             <h1>ŽIVOTOPIS</h1>
         </div>
+        <div class="row">
+            <div class="col-lg-6 col-md-6 col-sm-12">
+                <h3 class="cv-title">Obrazovanje</h3>
+                <div class="cv-item">
+                  <h5>Prvostupnik poslovne informatike (bacc.inf.)</h5>
+                  <h6>2019 - 2022</h6>
+                  <p><em>Fakultet organizacije i informatike</em></p>
+                  <p>Završio sam preddiplomski studij "Primjena informacijske tehnologije u poslovanju" u trajanju od 3 godine.
+                  Završni rad obranio sam ocjenom 5. 
+                  Moj završni rad dostupan je ovdje:</p><a target="_blank" href="https://repozitorij.foi.unizg.hr/islandora/object/foi:7382"><i class="fa fa-file" aria-hidden="true"></i></a>
+                </div>
+                <div class="cv-item">
+                    <h5>Ekonomist</h5>
+                    <h6>2015 - 2019</h6>
+                    <p><em>Srednja škola Vrbovec</em></p>
+                </div>
+            </div>
+            <div class="col-lg-6 col-md-6 col-sm-12">
+                <h3 class="cv-title">Stručna praksa</h3>
+                <div class="cv-item pb0">
+                    <h5>Git.hr</h5>
+                    <h6>2/2022 - 3/2022</h6>
+                    <p>Stručnu sam praksu odradio u 6. semestru u tvrtki Git.hr. Koristio sam HTML, CSS i Javascript za izradu elemenata web stranice. Izrađene elemente morao sam uklopiti u projekt korištenjem .NET okruženja.</p>
+                </div>
+                <h3 class="cv-title">Hobiji i dodatne vještine</h3>
+                <div class="cv-item">
+                    <p>U slobodno se vrijeme bavim fotografiranjem, uređivanjem fotografija i videozapisa. Alate koje koristim su sljedeći:</p>
+                    <ul class="pd-l" style="list-style-type:circle">
+                        <li>Adobe Photoshop</li>
+                        <li>Adobe Lightroom</li>
+                        <li>Adobe Premiere</li>
+                        <li>Sony Vegas Pro</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="cv-footer">
+            <div>Cijeli životopis pogledajte ovdje:</div>
+            <a target="_blank" href="documents/MatijaLeljak-CV.pdf"><i class="fa fa-file" aria-hidden="true"></i></a>
+        </div>
     </section>
+    <section id="portfolio">
+        <div class="section-title">
+            <h1>PORTFOLIO</h1>
+        </div>
+        <div class="row">
+            <div class="col-lg-12">
+                <div class="portfolio-card">
+                    <div class="portfolio-card-header">
+                        <img src="images/product.png" alt="Product page" title="Product page">
+                    </div>
+                    <div class="portfolio-card-body">
+                        <span class="tag tag-teal">HTML</span>
+                        <span class="tag tag-purple">CSS</span>
+                        <span class="tag tag-pink">JavaScript</span>
+                        <h4>Product page</h4>
+                        <p>Stranica proizvoda izrađena na  stručnoj praksi za klijenta. Mogućnost mjenjanja slike, povećavanje i smanjivanje količine i gumb za dodavanje u košaricu. Naziv proizvoda, njegova cijena i opis.</p>
+                        <div class="portfolio-icons">
+                            <a href="https://github.com/MatijaLeljak/product-page" target="_blank"><i class="fa fa-github" aria-hidden="true"></i></a>
+                            <a href="https://matijaleljak.github.io/product-page/" target="_blank"><i class="fa fa-link" aria-hidden="true"></i></a>
+                        </div>
+                    </div>  
+                </div>
+            </div>
+            <div class="col-lg-12">
+                <div class="portfolio-card">
+                    <div class="portfolio-card-header">
+                        <img src="images/cart.png" alt="Shopping cart" title="Shopping cart">
+                    </div>
+                    <div class="portfolio-card-body">
+                        <span class="tag tag-teal">HTML</span>
+                        <span class="tag tag-purple">CSS</span>
+                        <h4>Shopping cart</h4>
+                        <p>Stranica košarice izrađena na  stručnoj praksi za klijenta.</p>
+                        <div class="portfolio-icons">
+                            <a href="https://github.com/MatijaLeljak/shopping-cart-ui" target="_blank"><i class="fa fa-github" aria-hidden="true"></i></a>
+                            <a href="https://matijaleljak.github.io/shopping-cart-ui/" target="_blank"><i class="fa fa-link" aria-hidden="true"></i></a>
+                        </div>
+                    </div>  
+                </div>
+            </div>
+            <div class="col-lg-12">
+                <div class="portfolio-card">
+                    <div class="portfolio-card-header">
+                        <img src="images/menu.png" alt="Restaurant menu" title="Restaurant menu">
+                    </div>
+                    <div class="portfolio-card-body">
+                        <span class="tag tag-teal">HTML</span>
+                        <span class="tag tag-purple">CSS</span>
+                        <span class="tag tag-pink">JavaScript</span>
+                        <h4>Restaurant menu</h4>
+                        <p>Stranica menija za restoran izrađena na  stručnoj praksi za klijenta. Korištenje Bootstrap okvira za tabove i modal prozore.</p>
+                        <div class="portfolio-icons">
+                            <a href="https://github.com/MatijaLeljak/restaurant-menu" target="_blank"><i class="fa fa-github" aria-hidden="true"></i></a>
+                            <a href="https://matijaleljak.github.io/restaurant-menu/" target="_blank"><i class="fa fa-link" aria-hidden="true"></i></a>
+                        </div>
+                    </div>  
+                </div>
+            </div>
+            <div class="col-lg-3 ">
+                <div class="portfolio-card">
+                    <div class="portfolio-card-header">
+                        <img src="images/checkout.png" alt="Checkout" title="checkout">
+                    </div>
+                    <div class="portfolio-card-body">
+                        <span class="tag tag-teal">HTML</span>
+                        <span class="tag tag-purple">CSS</span>
+                        <h4>Checkout</h4>
+                        <p>Checkout stranica izrađena na  stručnoj praksi za klijenta.</p>
+                        <div class="portfolio-icons">
+                            <a href="https://github.com/MatijaLeljak/checkout-ui" target="_blank"><i class="fa fa-github" aria-hidden="true"></i></a>
+                            <a href="https://matijaleljak.github.io/checkout-ui/" target="_blank"><i class="fa fa-link" aria-hidden="true"></i></a>
+                        </div>
+                    </div>  
+                </div>
+            </div>
+            <div class="col-lg-9 ">
+                <div class="portfolio-card">
+                    <div class="portfolio-card-header">
+                        <img src="images/lumi-clean.png" alt="LuMi clean" title="LuMi clean" >
+                    </div>
+                    <div class="portfolio-card-body">
+                        <span class="tag tag-teal">HTML</span>
+                        <span class="tag tag-purple">CSS</span>
+                        <h4>LuMi clean</h4>
+                        <p>Web stranica za tvrtku LuMi Clean. Izrađena u sklopu obaveznog projekta u 5. semestru iz kolegija Multimedijski sustavi. Izrađena u timu od troje studenta uključujući mene.</p>
+                        <div class="portfolio-icons">
+                            <a href="https://github.com/MatijaLeljak/LuMi-clean" target="_blank"><i class="fa fa-github" aria-hidden="true"></i></a>
+                            <a href="https://matijaleljak.github.io/LuMi-clean/" target="_blank"><i class="fa fa-link" aria-hidden="true"></i></a>
+                        </div>
+                    </div>  
+                </div>
+            </div>
+            <div class="col-lg-12">
+                <div class="portfolio-card">
+                    <div class="portfolio-card-header">
+                        <img src="images/osnovnaskola.png" alt="Osnovna škola" title="Osnovna škola" >
+                    </div>
+                    <div class="portfolio-card-body">
+                        <span class="tag tag-teal">HTML</span>
+                        <span class="tag tag-purple">CSS</span>
+                        <span class="tag tag-pink">JavaScript</span>
+                        <h4>Osnovna škola Krunoslava Kutena</h4>
+                        <p>Redizajn trenutne web stranice Osnovne škole. Izrađeno u sklopu praktičnog dijela završnog rada.</p>
+                        <div class="portfolio-icons">
+                            <a href="https://github.com/MatijaLeljak/osnovnaskola" target="_blank"><i class="fa fa-github" aria-hidden="true"></i></a>
+                            <a href="https://matijaleljak.github.io/osnovnaskola/" target="_blank"><i class="fa fa-link" aria-hidden="true"></i></a>
+                        </div>
+                    </div>  
+                </div>
+            </div>
+        </div>
+    </section>
+    <footer id="footer">
+        <h1>Kontaktirajte me:</h1>
+        <div class="footer-container">
+            <a href="tel: +385922474125"><i class="fa fa-phone" aria-hidden="true"></i></a>
+            <a href="mailto:leljakmatija74@gmail.com"><i class="fa fa-envelope" aria-hidden="true"></i></a>
+        </div>
+    </footer>
 </div>
-
+<button
+        type="button"
+        class="btn btn-orange btn-floating btn-lg"
+        id="btn-back-to-top"
+        >
+  <i class="fa fa-arrow-up"></i>
+</button>
+<script>$(document).ready(function () {
+        $(document).click(function (event) {
+            var click = $(event.target);
+            var _open = $(".navbar-collapse").hasClass("show");
+            if (_open === true && !click.hasClass("navbar-toggler")) {
+                $(".navbar-toggler").click();
+            }
+        });
+    });
+    </script>
+<script src="skripta.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3" crossorigin="anonymous"></script>
 </body>
