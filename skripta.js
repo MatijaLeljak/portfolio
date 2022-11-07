@@ -26,15 +26,46 @@ function scrollFunction() {
 	}
 
     if(
-    document.body.scrollTop > 750 ||
-    document.documentElement.scrollTop > 750
+    window.innerWidth < 992 && window.innerWidth > 576
     ){
-     document.getElementById("html").classList.add("html");
-     document.getElementById("css").classList.add("css");
-     document.getElementById("php").classList.add("php");
-     document.getElementById("photoshop").classList.add("photoshop");
-     document.getElementById("office").classList.add("office");
-	}
+        if(
+        document.body.scrollTop > 1200 ||
+        document.documentElement.scrollTop > 1200
+        ){
+         document.getElementById("html").classList.add("html");
+         document.getElementById("css").classList.add("css");
+         document.getElementById("php").classList.add("php");
+         document.getElementById("photoshop").classList.add("photoshop");
+         document.getElementById("office").classList.add("office");
+	    }
+    }
+    else if(
+    window.innerWidth < 576
+    ){
+        if(
+        document.body.scrollTop > 1500 ||
+        document.documentElement.scrollTop > 1500
+         ){   
+         document.getElementById("html").classList.add("html");
+         document.getElementById("css").classList.add("css");
+         document.getElementById("php").classList.add("php");
+         document.getElementById("photoshop").classList.add("photoshop");
+         document.getElementById("office").classList.add("office");
+	    }
+    }
+    else
+    {
+        if(
+        document.body.scrollTop > 750 ||
+        document.documentElement.scrollTop > 750
+         ){   
+         document.getElementById("html").classList.add("html");
+         document.getElementById("css").classList.add("css");
+         document.getElementById("php").classList.add("php");
+         document.getElementById("photoshop").classList.add("photoshop");
+         document.getElementById("office").classList.add("office");
+	    }
+    }
 }
 
 mybutton.addEventListener("click", backToTop);
