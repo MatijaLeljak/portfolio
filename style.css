@@ -22,7 +22,6 @@
 }
 .btn-orange:hover{
 	color:black;
-	background:;
 	transition:0.6s ease-out;
 }
 /* Header, navigacija i pozadina  */
@@ -127,7 +126,7 @@ li> i{
 	font-size: 18px;
 }
 
-/* SEKCIJA VJEŠTINE */
+/* SEKCIJA VJEï¿½TINE */
 .skills{
 	margin-top:20px;
 }
@@ -197,7 +196,7 @@ color:var(--orange);
 transition:1s ease-out;
 transform:scale(1.2);
 }
-/* SEKCIJA ŽIVOTOPIS */
+/* SEKCIJA ï¿½IVOTOPIS */
 .cv-title{
 margin:20px 0;
 }
@@ -280,6 +279,9 @@ margin: 10px;
 }
 .tag-pink {
   background-color: #cd5b9f;
+}
+.tag-red{
+	background-color: #FF665E;
 }
 /* FOOTER */
 footer h4{
