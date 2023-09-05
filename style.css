@@ -161,19 +161,23 @@ li> i{
     
 }
 
-.html {
+#html {
      width: 80%;
 	 animation: progress 1500ms ease-in 1;
 }
-.css, .office {
+#css {
      width: 60%;
 	 animation: progress 1500ms ease-in 1;
 }
-.php {
+#react{
+	width: 30%;
+	animation: progress 1500ms ease-in 1;
+}
+#php {
      width: 20%;
 	 animation: progress 1500ms ease-in 1;
 }
-.photoshop {
+#photoshop {
       width: 40%;
 	  animation: progress 1500ms ease-in 1;
 }
